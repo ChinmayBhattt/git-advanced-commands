@@ -1,0 +1,2 @@
+shah1=$(git hash-object -w example.txt)
+$$shah1
