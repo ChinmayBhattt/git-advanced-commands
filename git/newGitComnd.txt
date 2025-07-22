@@ -1,0 +1,9 @@
+1) shah1=$(git hash-object -w example.txt)
+- $$shah1
+
+2) git update-index --add -cacheinfo 18950shah1 $shah1 example.txt
+3) tree=$(git write-tree)
+4) $commit=$(echo "Intial commit" | git commit-tree $tree)
+5) git branch bug-fix
+6) git switch bug-fix
+7) press keypad: Q exit like control + z
